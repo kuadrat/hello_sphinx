@@ -16,6 +16,11 @@ sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.abspath('..'))
 sys.path.insert(0, os.path.abspath('../..'))
 sys.path.insert(0, os.path.abspath('../../..'))
+basedir = os.path.dirname(__file__)
+sys.path.insert(0, os.path.abspath(basedir + '/.'))
+sys.path.insert(0, os.path.abspath(basedir + '/..'))
+sys.path.insert(0, os.path.abspath(basedir + '/../..'))
+sys.path.insert(0, os.path.abspath(basedir + '/../../..'))
 print(sys.path)
 
 import sphinx_rtd_theme
